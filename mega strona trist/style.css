@@ -1,0 +1,107 @@
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding: 0;
+    
+}
+
+.header {
+    background: url('header.jpeg') center/cover no-repeat;
+    min-height: 100vh;
+    text-align: center;
+}
+
+.header h1 {
+    color: wheat;
+    font-family:  "Brush Script MT";
+    font-size: 100px;
+    text-decoration: overline ;
+    text-shadow: 2px 2px 5px gold;
+    text-transform: uppercase;
+}
+
+.header h2 {
+    color: whitesmoke;
+    font-family:"Papyrus";
+    font-size: 64px;
+    position: relative;
+    text-shadow: 2px 2px 5px black;
+}
+
+.container {
+    padding: 10%;
+}
+
+.header img {
+    height: 20vh;
+    opacity: 0.8;
+    width: 20vh;
+}
+
+.menu {
+  align-items: center;
+  background: #28282B;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  left: 0;
+  padding: 0 3rem;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.menu a {
+  color: whitesmoke;
+  font-family:"Papyrus";
+  font-size: 20px;
+  margin: 0 1rem;
+  padding: 1rem .5rem;
+  text-decoration: none;
+}
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown ul {
+  background: #3e3e41;
+  border-radius: 7px;
+  box-shadow: 0px 0px 23px 0px rgba(0,0,0,0.25);
+  display: none;
+  list-style-type: none;
+  margin-top: 10px;
+  padding: 0;
+  position: absolute;
+  text-align: center;
+  width: 200px;
+}
+
+.dropdown ul li {
+  padding: .5rem;
+}
+
+.dropdown ul li a {
+  display: inline-block;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.dropdown ul li:hover {
+  background: #29292b;
+  border-radius: 7px;
+}
+
+.dropdown a:hover + ul,
+.dropdown ul:hover {
+  display: block;
+}
+
+.menu label.logo{
+  color: whitesmoke;
+  font-family:"Papyrus";
+  font-size: 30px;
+  width: 100%;
+}
